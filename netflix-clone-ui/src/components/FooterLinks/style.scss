@@ -1,0 +1,13 @@
+.linksList {
+    display: flex;
+    flex-wrap: wrap;
+    .link {
+        flex-basis: 25%;
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+        a {
+            text-decoration: none;
+            color: #808080;
+        }
+    }
+}
