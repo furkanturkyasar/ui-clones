@@ -1,6 +1,6 @@
 # Netflix-ui-clone
 
-live link: [live](https:/netflix-ui-clone-practise.netlify.app)
+live link: [live](https://netflix-ui-clone-practise.netlify.app/)
 
 # Getting Started with Create React App
 
