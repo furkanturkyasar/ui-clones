@@ -142,3 +142,10 @@ footer {
 	justify-content: center;
 	margin-top: 20px;
 }
+
+@media (max-width: 850px) {
+	#bottom-left, #bottom-right, #card {
+		width: 100%;
+		height: auto;
+	}
+}
