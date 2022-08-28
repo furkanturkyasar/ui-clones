@@ -6,6 +6,7 @@
 
 body {
     background-color: #ecf2f8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 #container {
@@ -15,6 +16,8 @@ body {
 #card-1 {
     background-color: hsl(263, 55%, 52%);
     color: #ffffff;
+    position: relative;
+    z-index: 0;
 }
 
 #card-2 {
@@ -22,8 +25,9 @@ body {
     color: #ffffff;
 }
 
-#card-3 {
+#card-3, #card-5 {
     background-color: #ffffff;
+    color: #48556a;
 }
 
 #card-4 {
@@ -31,11 +35,84 @@ body {
     color: #ffffff;
 }
 
-#card-5 {
-    background-color: #ffffff;
-}
-
 .grid-item {
     margin-bottom: 20px;
-    padding: 20px; 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+}
+
+.grid-item p {
+    opacity: 70%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 3;
+}
+
+.header .name {
+    opacity: 100%;
+    font-size: 1rem;
+}
+
+.header img {
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid #7541c8;
+}
+
+.grid-item h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#quote {
+    position: absolute;
+    right: 15%;
+    top: 0;
+    z-index: 1;
+}
+
+@media (min-width: 576px) {
+
+    #container, #left-section, #top,
+    #bottom {
+        display: flex;
+    }
+
+    #container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    #card-5 {
+        flex-basis: 20%;
+    }
+
+    #left-section {
+        flex-direction: column;
+        flex-basis: 80%;
+    }
+
+    #left-section .grid-item {
+        margin-right: 15px;
+    }
+
+    #top, #bottom {
+        flex-basis: 50%;
+    }
+
+    #card-1, #card-4 {
+        flex-basis: 65%;
+    }
+    
+    #card-2, #card-3 {
+        flex-basis: 35%;
+    }
+    
 }
